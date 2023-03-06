@@ -5,6 +5,8 @@ import java.io.IOException;
 
 public class WriteIntoFile {
 	
+	
+//	Code For Writing Data in TextFile
 	public static void writeData(String prodName, String prodPrize) {
 		FileWriter fw;
 		try {

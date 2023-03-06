@@ -9,8 +9,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.wipro.base.TestBase;
 
 public class ValidateMenuPage extends TestBase{
-	By topMenuNotMobiles = By.xpath("/html/body/div[6]/div[2]/ul[1]");
 	
+	// Locate WebElements on Web Site 
+	By topMenuNotMobiles = By.xpath("/html/body/div[6]/div[2]/ul[1]");
 	By computers = By.xpath("/html/body/div[6]/div[2]/ul[1]/li[1]/a");
 	By electronics = By.xpath("/html/body/div[6]/div[2]/ul[1]/li[2]/a");
 	By apparel = By.xpath("/html/body/div[6]/div[2]/ul[1]/li[3]/a");
@@ -19,6 +20,8 @@ public class ValidateMenuPage extends TestBase{
 	By jewelry = By.xpath("/html/body/div[6]/div[2]/ul[1]/li[6]/a");
 	By giftCards = By.xpath("/html/body/div[6]/div[2]/ul[1]/li[7]/a");
 	
+	
+	//Code for validating and Checking How many Menus are There
 	public boolean validateMenuList() {
 		
 		driver.findElement(computers).click();

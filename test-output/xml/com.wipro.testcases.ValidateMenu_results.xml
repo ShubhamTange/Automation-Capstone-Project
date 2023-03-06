@@ -4,12 +4,12 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="24.354">
+           time="24.273">
   <properties />
   
   
-            <testcase name="loginTest" time="4.784" classname="com.wipro.testcases.ValidateMenu" />
-                <testcase name="valiadteLogout" time="6.173" classname="com.wipro.testcases.ValidateMenu" />
-                <testcase name="validateMenuTest" time="13.397" classname="com.wipro.testcases.ValidateMenu" />
+            <testcase name="valiadteLogout" time="5.951" classname="com.wipro.testcases.ValidateMenu" />
+                <testcase name="loginTest" time="4.714" classname="com.wipro.testcases.ValidateMenu" />
+                <testcase name="validateMenuTest" time="13.608" classname="com.wipro.testcases.ValidateMenu" />
       
 </testsuite>

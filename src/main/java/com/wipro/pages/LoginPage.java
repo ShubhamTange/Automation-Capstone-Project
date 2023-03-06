@@ -9,11 +9,15 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.wipro.base.TestBase;
 
 public class LoginPage extends TestBase{
+	
+	// Locate WebElements on Web Site 
 	By login = By.linkText("Log in");
 	By email = By.id("Email");
 	By password = By.id("Password");
 	By loginButton = By.xpath("//button[text()='Log in']");
 	//By logout = By.className("ico-logout12");
+	
+	//code for validation of login process
 	public boolean validateLogin(String uname, String pwd) {
 		
 		
@@ -26,8 +30,10 @@ public class LoginPage extends TestBase{
 		driver.findElement(loginButton).click();
 		
 		
+		
 		WebDriverWait wait = new WebDriverWait(driver,10);
 		
+		//Check Whether you successfully login or  not
 		boolean actResult = true;
 		try {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("ico-logout")));

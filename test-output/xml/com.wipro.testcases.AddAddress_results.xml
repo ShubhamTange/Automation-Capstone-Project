@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="25.935">
+           time="31.232">
   <properties />
   
   
-            <testcase name="runScenario" time="25.935" classname="com.wipro.testcases.AddAddress" />
+            <testcase name="runScenario" time="31.232" classname="com.wipro.testcases.AddAddress" />
       
 </testsuite>

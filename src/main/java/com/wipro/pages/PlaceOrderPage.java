@@ -18,11 +18,7 @@ public class PlaceOrderPage extends TestBase{
 	By clickOnShoppingCart = By.cssSelector("#topcartlink > a");
 	By clickCheckBox = By.xpath("//*[@id=\"termsofservice\"]");
 	By checkOut = By.xpath("//*[@id=\"checkout\"]");
-	
 	By shoppingCartTextCheck = By.xpath("/html/body/div[6]/div[3]/div/div/div/div[1]/h1");
-
-	
-	
 	By clickContinue = By.xpath("//*[@id=\"billing-buttons-container\"]/button[4]");
 	By shipContinue = By.xpath("//*[@id=\"shipping-method-buttons-container\"]/button");
 	By paymentContinue = By.xpath("//*[@id=\"payment-method-buttons-container\"]/button");
@@ -32,6 +28,7 @@ public class PlaceOrderPage extends TestBase{
 	
 WebDriverWait wait = new WebDriverWait(driver, 10);
 	
+	// code for select desktop from category
 	public boolean selectDesktop() {
 		driver.findElement(clickOnComp).click();
 		wait(2000);
@@ -45,6 +42,7 @@ WebDriverWait wait = new WebDriverWait(driver, 10);
 		return actResult;
 	}
 	
+	//Code for add products to the Add To Cart Section
 	public boolean addToCart() {
 		driver.findElement(clickOnAddToCart).click();
 		wait(10000);
@@ -52,6 +50,8 @@ WebDriverWait wait = new WebDriverWait(driver, 10);
 		return actResult;
 	}
 
+	
+	//Click on Shopping Cart Section
 	public boolean clickShoppingCart() {
 		driver.findElement(clickOnShoppingCart).click();
 		wait(1000);
@@ -61,6 +61,7 @@ WebDriverWait wait = new WebDriverWait(driver, 10);
 		return actResult;
 	}
 	
+	//Click on CheckOut
 	public boolean clickCheckout() {
 		driver.findElement(checkOut).click();
 		wait(1000);
@@ -73,6 +74,7 @@ WebDriverWait wait = new WebDriverWait(driver, 10);
 		
 	}
 
+	// Code for making payment process
 	public boolean makePayment() {
 		driver.findElement(By.xpath("//*[@id=\"paymentmethod_0\"]")).click();
 		driver.findElement(paymentContinue).click();
@@ -84,9 +86,12 @@ WebDriverWait wait = new WebDriverWait(driver, 10);
 		
 	}
 
+	//Click on confirm Button
 	public boolean clickConfirm() {
 		driver.findElement(cnfBtn).click();
 		wait(1000);
+		
+		//Check whether Clicked or not
 		boolean actResult = true;
 		try {
 			wait.until(ExpectedConditions.visibilityOfElementLocated(cnfMsg));

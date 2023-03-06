@@ -7,7 +7,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.wipro.base.TestBase;
 
-public class RegistrationPage extends TestBase{
+public class RegistrationPage extends TestBase {
+
+	// locating WebElements
 	By register = By.linkText("Register");
 	By genderRadio = By.id("gender-male");
 	By firstName = By.id("FirstName");
@@ -17,10 +19,10 @@ public class RegistrationPage extends TestBase{
 	By cnfpwd = By.id("ConfirmPassword");
 	By rgstrBtn = By.id("register-button");
 	By cntnue = By.xpath("/html/body/div[6]/div[3]/div/div/div/div[2]/div[1]");
-	
-public boolean createAccount(String fname, String lname, String emailid, String passwd, String cnfpass) {
-		
-		
+
+	// Code for Registration
+	public boolean createAccount(String fname, String lname, String emailid, String passwd, String cnfpass) {
+
 		driver.findElement(register).click();
 		wait(1000);
 		driver.findElement(genderRadio).click();
@@ -37,17 +39,19 @@ public boolean createAccount(String fname, String lname, String emailid, String 
 		wait(1000);
 		driver.findElement(rgstrBtn).click();
 		wait(1000);
-		WebDriverWait wait = new WebDriverWait(driver,10);
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+
 		
+		//Checks Whether registered Successfully or not
 		boolean actResult = true;
 		try {
-		wait.until(ExpectedConditions.visibilityOfElementLocated(cntnue));
+			wait.until(ExpectedConditions.visibilityOfElementLocated(cntnue));
 //		driver.findElement(logout).click();
-		}catch(TimeoutException te) {
+		} catch (TimeoutException te) {
 			actResult = false;
 			captureScreenshots("registration failure");
 //			te.printStackTrace();
 		}
 		return actResult;
-}
+	}
 }

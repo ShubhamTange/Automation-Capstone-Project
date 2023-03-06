@@ -10,6 +10,7 @@ public class ReadFromExcelRegistration {
 
 	static XSSFWorkbook workbook;
 
+	//Code For Getting Data from registerData Excel File
 	public static String[][] getData() {
 		String fileName = "src\\test\\resources\\testdata\\registerData.xlsx";
 		try {

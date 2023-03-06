@@ -66,6 +66,7 @@ public class TestBase {
 		}
 	}
 
+	//code  for Capturing ScreenShot when test-case fails
 	public String captureScreenshots(String scrName) {
 
 		System.out.println("Screenshot for " + scrName);

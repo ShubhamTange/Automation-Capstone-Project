@@ -7,9 +7,11 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ReadFromExcel {
-
+	
 	static XSSFWorkbook workbook;
 
+	
+	//Code For Getting Data from Login Excel File
 	public static String[][] getData() {
 		String fileName = "src\\test\\resources\\testdata\\login.xlsx";
 		try {

@@ -9,6 +9,7 @@ import com.wipro.base.TestBase;
 
 public class AddressPage extends TestBase{
 	
+	// Locate WebElements on Web Site 
 	By addNew = By.xpath("/html/body/div[6]/div[3]/div/div[2]/div/div[2]/div[2]/button");
 	By firstName = By.xpath("//*[@id=\"Address_FirstName\"]");
 	By lastName = By.xpath("//*[@id=\"Address_LastName\"]");
@@ -20,6 +21,8 @@ public class AddressPage extends TestBase{
 	By phoneNumber = By.xpath("//*[@id=\"Address_PhoneNumber\"]");
 	By saveBtn = By.xpath("/html/body/div[6]/div[3]/div/div[2]/form/div/div[2]/div[2]/button");
 	
+	
+	//Code for adding address in myAccount Section
 	public boolean addAddress(String firstname,String lastname,String Email,String cityname,String addressCity,String postalCode,String pNumber) {
 		
 		driver.findElement(addNew).click();
@@ -43,6 +46,8 @@ public class AddressPage extends TestBase{
 		wait(1000);
 		driver.findElement(saveBtn).click();
 		
+		
+		//Check Whether address is updated or  not
 		boolean actResult=true; 
 		try {
 			WebDriverWait wait = new WebDriverWait(driver,10);
