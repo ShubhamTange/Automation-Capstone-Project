@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="13" passed="12" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-03-03T12:37:59 IST" name="Suite" finished-at="2023-03-03T12:40:31 IST" duration-ms="152599">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.wipro.testcases.AddAddress@5b7a7f33]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-03-03T12:37:59 IST" name="Test" finished-at="2023-03-03T12:40:31 IST" duration-ms="152599">
+      <class name="com.wipro.testcases.AccountRegister">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.wipro.testcases.AccountRegister@55cb6996]" started-at="2023-03-03T12:37:59 IST" name="beforeClass" finished-at="2023-03-03T12:38:05 IST" duration-ms="5957" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="createAccount(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.wipro.testcases.AccountRegister@55cb6996]" started-at="2023-03-03T12:38:06 IST" name="createAccount" data-provider="dp" finished-at="2023-03-03T12:38:26 IST" duration-ms="20300" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Shubham]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Tange]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[shubhamtange167@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Shubham@123]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Shubham@123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at com.wipro.testcases.AccountRegister.createAccount(AccountRegister.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAccount -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.wipro.testcases.AccountRegister@55cb6996]" started-at="2023-03-03T12:38:26 IST" name="afterClass" finished-at="2023-03-03T12:38:31 IST" duration-ms="5441" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.wipro.testcases.AccountRegister -->
+      <class name="com.wipro.testcases.PlaceOrder">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.wipro.testcases.PlaceOrder@57bc27f5]" started-at="2023-03-03T12:38:58 IST" name="beforeClass" finished-at="2023-03-03T12:39:03 IST" duration-ms="5636" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:com.wipro.testcases.PlaceOrder@57bc27f5]" started-at="2023-03-03T12:39:03 IST" name="loginTest" data-provider="dp" finished-at="2023-03-03T12:39:08 IST" duration-ms="4725" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[shubhamtange167@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Shubham@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="selectDesktopTest()[pri:1, instance:com.wipro.testcases.PlaceOrder@57bc27f5]" started-at="2023-03-03T12:39:08 IST" name="selectDesktopTest" finished-at="2023-03-03T12:39:15 IST" duration-ms="6611" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectDesktopTest -->
+        <test-method signature="addToCartTest()[pri:2, instance:com.wipro.testcases.PlaceOrder@57bc27f5]" started-at="2023-03-03T12:39:15 IST" name="addToCartTest" finished-at="2023-03-03T12:39:25 IST" duration-ms="10114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCartTest -->
+        <test-method signature="clickShoppingCartTest()[pri:3, instance:com.wipro.testcases.PlaceOrder@57bc27f5]" started-at="2023-03-03T12:39:25 IST" name="clickShoppingCartTest" finished-at="2023-03-03T12:39:28 IST" duration-ms="3130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickShoppingCartTest -->
+        <test-method signature="clickCheckoutTest()[pri:4, instance:com.wipro.testcases.PlaceOrder@57bc27f5]" started-at="2023-03-03T12:39:28 IST" name="clickCheckoutTest" finished-at="2023-03-03T12:39:37 IST" duration-ms="8700" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickCheckoutTest -->
+        <test-method signature="makePaymentTest()[pri:5, instance:com.wipro.testcases.PlaceOrder@57bc27f5]" started-at="2023-03-03T12:39:37 IST" name="makePaymentTest" finished-at="2023-03-03T12:39:43 IST" duration-ms="6288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- makePaymentTest -->
+        <test-method signature="clickConfirmTest()[pri:6, instance:com.wipro.testcases.PlaceOrder@57bc27f5]" started-at="2023-03-03T12:39:43 IST" name="clickConfirmTest" finished-at="2023-03-03T12:39:44 IST" duration-ms="1170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickConfirmTest -->
+        <test-method signature="valiadteLogout()[pri:7, instance:com.wipro.testcases.PlaceOrder@57bc27f5]" started-at="2023-03-03T12:39:44 IST" name="valiadteLogout" finished-at="2023-03-03T12:39:50 IST" duration-ms="6467" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- valiadteLogout -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.wipro.testcases.PlaceOrder@57bc27f5]" started-at="2023-03-03T12:39:50 IST" name="afterClass" finished-at="2023-03-03T12:39:56 IST" duration-ms="5447" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.wipro.testcases.PlaceOrder -->
+      <class name="com.wipro.testcases.AddAddress">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.wipro.testcases.AddAddress@5b7a7f33]" started-at="2023-03-03T12:38:31 IST" name="setUpClass" finished-at="2023-03-03T12:38:32 IST" duration-ms="199" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@ca7e37f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.wipro.testcases.AddAddress@5b7a7f33]" started-at="2023-03-03T12:38:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-03T12:38:58 IST" duration-ms="25935" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate add address functionality"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add Address"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.wipro.testcases.AddAddress@5b7a7f33]" started-at="2023-03-03T12:38:58 IST" name="tearDownClass" finished-at="2023-03-03T12:38:58 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.wipro.testcases.AddAddress -->
+      <class name="com.wipro.testcases.ValidateMenu">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.wipro.testcases.ValidateMenu@5fb759d6]" started-at="2023-03-03T12:39:56 IST" name="beforeClass" finished-at="2023-03-03T12:40:02 IST" duration-ms="5625" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:com.wipro.testcases.ValidateMenu@5fb759d6]" started-at="2023-03-03T12:40:02 IST" name="loginTest" data-provider="dp" finished-at="2023-03-03T12:40:06 IST" duration-ms="4784" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[shubhamtange167@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Shubham@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="valiadteLogout()[pri:1, instance:com.wipro.testcases.ValidateMenu@5fb759d6]" started-at="2023-03-03T12:40:06 IST" name="valiadteLogout" finished-at="2023-03-03T12:40:13 IST" duration-ms="6173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- valiadteLogout -->
+        <test-method signature="validateMenuTest()[pri:1, instance:com.wipro.testcases.ValidateMenu@5fb759d6]" started-at="2023-03-03T12:40:13 IST" name="validateMenuTest" finished-at="2023-03-03T12:40:26 IST" duration-ms="13397" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateMenuTest -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.wipro.testcases.ValidateMenu@5fb759d6]" started-at="2023-03-03T12:40:26 IST" name="afterClass" finished-at="2023-03-03T12:40:31 IST" duration-ms="5454" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.wipro.testcases.ValidateMenu -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
